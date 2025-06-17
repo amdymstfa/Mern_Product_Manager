@@ -4,9 +4,9 @@
   "description": "",
   "main": "index.js",
   "scripts": {
-    "server": ""
+    "server": "nodemon backend/server.js"
   },
-  "types": "module",
+  "type": "module",
   "repository": {
     "type": "git",
     "url": "git+https://github.com/amdymstfa/Mern_Product_Manager.git"
@@ -14,7 +14,6 @@
   "keywords": [],
   "author": "",
   "license": "ISC",
-  "type": "commonjs",
   "bugs": {
     "url": "https://github.com/amdymstfa/Mern_Product_Manager/issues"
   },
