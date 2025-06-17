@@ -17,5 +17,10 @@
   "bugs": {
     "url": "https://github.com/amdymstfa/Mern_Product_Manager/issues"
   },
-  "homepage": "https://github.com/amdymstfa/Mern_Product_Manager#readme"
+  "homepage": "https://github.com/amdymstfa/Mern_Product_Manager#readme",
+  "dependencies": {
+    "dotenv": "^16.5.0",
+    "express": "^5.1.0",
+    "mongoose": "^8.16.0"
+  }
 }
