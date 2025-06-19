@@ -44,7 +44,21 @@ app.post('/api/products', async (req, res) => {
         });
     }
 });
-app.listen(port, ()=>{
-    connectDB();
-    console.log(`server start on http://localhost:${port}`);
-});
+// app.listen(port, ()=>{
+//     connectDB();
+//     console.log(`server start on http://localhost:${port}`);
+// });
+
+// connect databases before 
+const startServer = async () => {
+    try {
+        await connectDB();
+        app.listen(port, ()=>{
+            console.log(`server start on http://localhost:${port}`);
+        });
+    } catch (error) {
+        console.error(`server failed : ${error}`);
+    }
+};
+
+startServer();
